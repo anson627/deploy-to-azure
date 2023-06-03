@@ -6,17 +6,8 @@ on:
 
 env:
   IMAGE_REGISTRY_URL: ghcr.io
-<<<<<<< HEAD
   DOCKER_IMAGE_NAME: anson627-azure-ttt
   AZURE_WEBAPP_NAME: anson627-ttt-app
-=======
-  ###############################################
-  ### Replace <username> with GitHub username ###
-  ###############################################
-  DOCKER_IMAGE_NAME: <username>-azure-ttt
-  AZURE_WEBAPP_NAME: <username>-ttt-app
-  ###############################################
->>>>>>> 7056648 (update deploy staging)
 
 jobs:
   build:
@@ -100,8 +91,4 @@ jobs:
           inlineScript: |
             az logout
             az cache purge
-<<<<<<< HEAD
             az account clear
-=======
-            az account clear
->>>>>>> 7056648 (update deploy staging)
