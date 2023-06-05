@@ -16,6 +16,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Use Node.js v14.18.1
+        uses: actions/setup-node@v2
+        with:
+          node-version: v14.18.1
+
       - uses: actions/checkout@v3
       - name: npm install and build webpack
         run: |
